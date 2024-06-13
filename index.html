@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Windows clone</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+    <div class="main-window">
+        <div class="tab-navigation-menu">
+            <span class="fa fa-minus"></span>
+            <span class="fa fa-window-maximize"></span>
+            <span onclick="loadHTML('/pages/application-drawer.html')" class="fa fa-close"></span>
+        </div>
+        <div class="toolbar">
+            <span class="toolbar-option round fa fa-arrow-left"></span>
+            <span class="toolbar-option round fa fa-arrow-right"></span>
+        </div>
+        <div class="home-window">
+            <!-- dynamic change -->
+        </div>
+        <div class="start-window">
+            <div class="start-window-grid">
+                <div class="start-window-section left-section">
+                    <div class="start-window-option">
+                        <img src="assets/icons/folder.png" alt="Folder">
+                        <span>MS Word</span>
+                    </div>
+                    <div class="start-window-option">
+                        <img src="assets/icons/folder.png" alt="Folder">
+                        <span>MS Exel</span>
+                    </div>
+                    <div class="start-window-option">
+                        <img src="assets/icons/folder.png" alt="Folder">
+                        <span>Notepad</span>
+                    </div>
+                    <div class="start-window-option">
+                        <img src="assets/icons/file-manager.png" alt="Folder">
+                        <span>File Manager</span>
+                    </div>
+                    <!-- Repeat the .start-window-option div for more options as needed -->
+                </div>
+                <div class="start-window-section right-section">
+                    <div class="admin-app">
+                        <img src="/assets/icons/system-users.png" alt="/assets/folder.png">
+                    </div>
+                    <div class="start-window-option">
+                        <img src="assets/icons/folder.png" alt="Folder">
+                        <span>Settings</span>
+                    </div>
+                    <div class="start-window-option">
+                        <img src="assets/icons/folder.png" alt="Folder">
+                        <span>Folders</span>
+                    </div>
+                    <div class="start-window-option">
+                        <img src="assets/icons/folder.png" alt="Folder">
+                        <span>Folders</span>
+                    </div>
+                    <div class="start-window-option">
+                        <img src="assets/icons/folder.png" alt="Folder">
+                        <span>Folders</span>
+                    </div>
+                    <div class="start-window-option">
+                        <img src="assets/icons/folder.png" alt="Folder">
+                        <span>Folders</span>
+                    </div>
+                    <!-- Repeat the .start-window-option div for more options as needed -->
+                </div>
+            </div>
+        </div>
+        <div class="deskbar-menu-dialog-box">
+            <div class="d-m-dialog-box-grid">
+                <span class="d-m-dialog-box-option fa fa-wifi"></span>
+                <span class="d-m-dialog-box-option fa fa-user-plus"></span>
+                <span class="d-m-dialog-box-option fa fa-wrench"></span>
+                <span class="d-m-dialog-box-option fa fa-signal"></span>
+                <span class="d-m-dialog-box-option fa fa-volume-up"></span>
+                <span class="d-m-dialog-box-option fa fa-battery-full"></span>
+            </div>
+        </div>
+        <div class="deskbar">
+            <div class="left-deskbar">
+                <div id="start-btn" class="deskbar-icon">
+                    <img src="assets/icons/start-here.png" alt="Start Button">
+                </div>
+                <div class="deskbar-icon">
+                    <img src="assets/icons/folder.png" alt="Start Button">
+                </div>
+                <!-- Repeat the .deskbar-icon div for more icons as needed -->
+            </div>
+            <div class="right-deskbar">
+                <div id="deskbar-menu">
+                    <span style="padding-top: 3px;" class="fa fa-chevron-up"></span>
+                </div>
+                <div class="clock">
+                    <span id="clock-time">00:00 AM</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/time.js"></script>
+    <script id="page-script"></script>
+</body>
+</html>
