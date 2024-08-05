@@ -12,8 +12,8 @@ function loadHTML(iPageUrl, iPagejs) {
         .then(response => response.text())
         .then(data => {
             homeWindow.innerHTML = data;
-            tabNavMenu.style.display = (pageUrl === "/pages/application-drawer.html") ? "none" : "block";
-            toolbar.style.display = (pageUrl === "/pages/application-drawer.html") ? "none" : "block";
+            tabNavMenu.style.display = (iPageUrl === "/pages/application-drawer.html") ? "none" : "block";
+            toolbar.style.display = (iPageUrl === "/pages/application-drawer.html") ? "none" : "block";
             
             if (pagejs) {
                 // Remove existing script if present
