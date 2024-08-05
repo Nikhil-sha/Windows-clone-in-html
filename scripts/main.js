@@ -6,8 +6,8 @@ const deskbarMenu = document.getElementById("deskbar-menu");
 
 // Function to load the HTML file and set its content as innerHTML of the div
 function loadHTML(iPageUrl, iPagejs) {
-    let pageUrl = 'https://nikhil-sha.github.io/Windows-clone-in-html/' + iPageUrl;
-    let pagejs = 'https://nikhil-sha.github.io/Windows-clone-in-html/' + iPagejs;
+    let pageUrl = 'https://raw.githubusercontent.com/Nikhil-sha/Windows-clone-in-html/main' + iPageUrl;
+    let pagejs = 'https://raw.githubusercontent.com/Nikhil-sha/Windows-clone-in-html/main' + iPagejs;
     fetch(pageUrl)
         .then(response => response.text())
         .then(data => {
