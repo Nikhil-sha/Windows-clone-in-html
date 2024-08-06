@@ -12,7 +12,7 @@ html {
 	font-family: Arial, sans-serif;
 	display: flex;
 	flex-direction: column;
-	background: url('/assets/windows.jpeg') center/cover no-repeat;
+	background: url('https://raw.githubusercontent.com/Nikhil-sha/Windows-clone-in-html/main/assets/windows.jpeg') center/cover no-repeat;
 }
 
 /* Main container */

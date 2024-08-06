@@ -6,8 +6,12 @@ const deskbarMenu = document.getElementById("deskbar-menu");
 
 // Function to load the HTML file and set its content as innerHTML of the div
 function loadHTML(iPageUrl, iPagejs) {
+	
+	// for GitHub
+	// Delete these two variables and give the name of these variables to the arguments of loadHTML
 	let pageUrl = 'https://raw.githubusercontent.com/Nikhil-sha/Windows-clone-in-html/main' + iPageUrl;
 	let pagejs = 'https://raw.githubusercontent.com/Nikhil-sha/Windows-clone-in-html/main' + iPagejs;
+	
 	fetch(pageUrl)
 		.then(response => response.text())
 		.then(data => {
@@ -30,7 +34,9 @@ function loadHTML(iPageUrl, iPagejs) {
 				document.head.appendChild(script);
 			}
 		})
-		.catch(error => console.error('Error fetching the HTML file / showing toolbar:', error));
+		.catch(error => {
+			homeWindow.innerHTML = `<center><p>Error<br />${error}</p></center>`;
+		});
 }
 
 // Toggle function for the start button
